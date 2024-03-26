@@ -1,0 +1,41 @@
+@import './styles/variables.scss';
+
+body {
+    margin: 0;
+    background: $black;
+    @include baseFontStyle;
+    font-size: $fontSize1;
+}
+
+h1 {
+    font-size: $fontSize4;
+}
+
+h2, h3 {
+    font-size: $fontSize1-4;
+}
+
+h4 {
+    font-size: $fontSize1;
+}
+
+.content {
+    padding: 4rem;
+
+    // .static {
+    //     position: fixed;
+    // }
+}
+
+/* Mobile */
+@media (max-width: 767px) {}
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    html {
+        font-size: 14px;
+    }
+}
+/* Laptop */
+@media (min-width: 1024px) and (max-width: 1279px) {}
+/* Desktop */
+@media (min-width: 1280px) {}

@@ -1,0 +1,18 @@
+@mixin fontStyle {
+    font-size: $baseFontStyle;
+    font-optical-sizing: $baseFontOpticalSizing;
+}
+
+@mixin baseFontStyle {
+    font-family: $bodyFontFamily;
+    font-weight: $baseFontWeight;
+    @include fontStyle;
+    color: $blue;
+}
+
+@mixin blackFontStyle {
+    font-family: $blackFontFamily;
+    font-weight: $blackFontWheight;
+    @include fontStyle;
+    color: $red;
+}

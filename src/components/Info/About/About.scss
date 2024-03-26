@@ -1,0 +1,9 @@
+@import '../../../styles/variables.scss';
+
+.about {
+    margin-top: 4rem;
+
+    .accent {
+        @include blackFontStyle;
+    }
+}

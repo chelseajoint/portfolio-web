@@ -1,0 +1,14 @@
+@import '../../../styles/variables.scss';
+
+.block {
+    width: 5rem;
+    height: 2.5rem;
+    background: radial-gradient(ellipse at left bottom, $black, $blue); /* Degradado radial */
+    background-size: 150% 100%;
+    box-shadow: inset .2rem -.2rem 1rem $blue;
+}
+
+.black {
+    background: $black;
+    box-shadow: none;
+}

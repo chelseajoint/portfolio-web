@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+
+.brick-row {
+    display: flex;
+    justify-content: space-between; // Распределяем блоки равномерно по ширине строки
+}
+
+.brick-row:nth-child(odd) .block {
+    margin-left: calc(-5rem / 2); // Начало нечетных строк с половины блока
+    margin-right: calc(-5rem / 2); // Конец нечетных строк с половины блока
+}

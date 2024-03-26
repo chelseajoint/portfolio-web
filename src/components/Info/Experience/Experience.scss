@@ -1,0 +1,69 @@
+@import '../../../styles/variables.scss';
+
+.experience {
+    margin-top: 4rem;
+    z-index: 0;
+
+
+.job-info {
+    display: flex;
+    margin-bottom: 2rem;
+
+    .dates {
+        white-space: nowrap;
+    }
+
+    .info {
+        width: 100%;
+        margin-left: 2rem;
+        margin-top: -.3rem;
+    }
+
+    h3, h4 {
+        @include blackFontStyle;
+        color: $blue;
+        margin: 0;
+    };
+
+    .position {
+        color: $red;
+    }
+
+    .clients {
+        margin-bottom: .5rem;
+    }
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+
+        h4{
+            color: $black;
+            position: relative;
+            border-radius: .5rem;
+            padding: .1rem .5rem;
+            margin-top: .25rem;
+            margin-right: .25rem;
+        
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $red;
+                border-radius: .5rem;
+                filter: blur(.1rem);
+                z-index: -1;
+            }
+        }
+    }
+
+    .tasks ul {
+        margin: 0;
+        padding: .5rem 1.5rem;
+    }
+}
+}
+
