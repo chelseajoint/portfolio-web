@@ -8,6 +8,50 @@
 .job-info {
     display: flex;
     margin-bottom: 2rem;
+    text-decoration: none;
+    color: $blue;
+
+    padding: 1rem;
+    margin-left: -1.2rem;
+    margin-top: -1.2rem;
+    border: .2rem solid $black;
+    border-radius: 1rem;    
+    @include transition;
+    transition-property: border-color;
+
+    &:hover {
+        // border-color: $red;
+
+        .company {
+            // color: $red;
+
+            &::after {
+                transform: translateY(-.1rem) translateX(.1rem) rotate(180deg);
+                border-color: $red;
+            }
+        }
+    }
+
+    .company {
+        @include transition;
+        transition-property: color;
+        color: $red;
+
+        &::after {
+            content: '';
+            position: absolute;
+            transform: translateY(20%) rotate(180deg);
+            width: .6rem;
+            height: .6rem;
+            margin-top: .1rem;
+            margin-left: .1rem;
+            border-left: .2rem solid $red;
+            border-bottom: .2rem solid $red;
+            @include transition;
+            transition-property: border-color;
+            transition-property: transform;
+        }
+    }
 
     .dates {
         white-space: nowrap;
@@ -23,10 +67,6 @@
         @include blackFontStyle;
         color: $blue;
         margin: 0;
-    };
-
-    .position {
-        color: $red;
     }
 
     .clients {
@@ -52,9 +92,9 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background-color: $red;
+                background-color: $blue;
                 border-radius: .5rem;
-                filter: blur(.1rem);
+                // filter: blur(.1rem);
                 z-index: -1;
             }
         }

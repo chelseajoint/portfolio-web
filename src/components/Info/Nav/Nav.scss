@@ -24,14 +24,21 @@
         margin-top: -4rem;
         margin-left: -3%;
 
+        a {
+                text-decoration: none;
+                color: $blue;
+            }
         li {
             font-size: $fontSize1-4;
             width: 13rem;
             text-align: center;
+            // @include transition;
+            // transition-property: font-weight;
 
-            &:hover {
+            &:hover,
+                &:active,
+                &.active {
                 @include blackFontStyle;
-                color: $blue;
             }
         }
     }

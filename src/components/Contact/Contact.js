@@ -1,6 +1,4 @@
 import React from 'react';
-import github from './resources/github.svg';
-import linkedin from './resources/linkedin.svg';
 
 import './Contact.scss';
 
@@ -8,8 +6,8 @@ const Contact = () => {
 return (
     <section className='contact'>
         <div className='social'>
-            <button><img src={github}></img></button>
-            <button><img src={linkedin}></img></button>
+            <button className='github'></button>
+            <button className='linkedin'></button>
         </div>
         <div className='contacts'>
             <a href="mailto:mariia.koikonova@gmail.com">mariia.koikonova@gmail.com</a>

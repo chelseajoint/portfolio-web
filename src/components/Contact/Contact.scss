@@ -1,6 +1,61 @@
 @import '../../styles/variables.scss';
 
+.contact,
+.social,
+.contacts {
+    display: flex;
+}
 .contact {
     position: fixed;
     bottom: 4rem;
+    .social {
+            button {
+                width: 3rem;
+                height: 3rem;
+                margin-right: 1rem;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+    
+            .github {
+                background-image: url('./resources/github.svg');
+                @include transition;
+                transition-property: background-image;
+    
+                &:hover {
+                    background-image: url('./resources/hover/github.svg');
+    
+                }
+            }
+    
+            .linkedin {
+                background-image: url('./resources/linkedin.svg');
+                @include transition;
+                transition-property: background-image;
+    
+                &:hover {
+                    background-image: url('./resources/hover/linkedin.svg');
+    
+                }
+            }
+    
+        }
+    
+        .contacts {
+            flex-direction: column;
+            text-decoration: none;
+            justify-content: flex-end;
+    
+            a {
+                text-decoration: none;
+                color: $blue;
+                @include transition;
+                transition-property: color;
+    
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
 }

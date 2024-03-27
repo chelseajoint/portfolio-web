@@ -1,16 +1,7 @@
 [
     {
-      "company": "Lingokids",
-      "position": "Diseñadora gráfica",
-      "dates": "Abr. 2022 – Sep. 2023",
-      "tasks": [
-        "Creación de una biblioteca de activos para su uso en futuras animaciones.",
-        "Diseño e ilustración de piezas para diferentes plataformas."
-      ],
-      "skills": ["Adobe Illustrator", "Adobe Photoshop", "Adobe Animate"]
-    },
-    {
       "company": "Craft Worldwide",
+      "link": "https://www.craftww.com/es/",
       "position": "Diseñadora digital y programadora front-end",
       "location": "Madrid, España",
       "dates": "Oct. 2021 – Abr. 2022",
@@ -23,7 +14,8 @@
       "skills": ["HTML", "CSS", "JavaScript", "Google Web Designer", "Figma", "Sizmek", "DoubleClick", "Adform", "Adobe Illustrator", "Adobe Photoshop", "Adobe XD", "Adobe After Effects"]
     },
     {
-      "company": "Wunderman Thompson",
+      "company": "Wunderman Thompson / S,C,P,F...",
+      "link": "https://www.vml.com/es/spain",
       "position": "Diseñadora digital y programadora front-end",
       "location": "Madrid, España",
       "dates": "Oct. 2017 – Jun. 2021",
@@ -37,6 +29,7 @@
     },
     {
       "company": "Binaloque",
+      "link": "https://binalogue.com/",
       "position": "Diseñadora gráfica",
       "location": "Madrid, España",
       "dates": "Jul. 2017 – Sep. 2017",
@@ -47,5 +40,16 @@
       ],
       "clients": ["Nike", "Calle 13", "HBO", "Paramount Channel"],
       "skills": ["Adobe Illustrator", "Adobe Photoshop", "Adobe After Effects"]
+    },
+    {
+      "company": "Lingokids",
+      "link": "https://lingokids.com/es/",
+      "position": "Diseñadora gráfica",
+      "dates": "Abr. 2022 – Sep. 2023",
+      "tasks": [
+        "Creación de una biblioteca de activos para su uso en futuras animaciones.",
+        "Diseño e ilustración de piezas para diferentes plataformas."
+      ],
+      "skills": ["Adobe Illustrator", "Adobe Photoshop", "Adobe Animate"]
     }
   ]

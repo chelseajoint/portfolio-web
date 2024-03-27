@@ -1,5 +1,8 @@
 @import './styles/variables.scss';
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     background: $black;
@@ -21,10 +24,6 @@ h4 {
 
 .content {
     padding: 4rem;
-
-    // .static {
-    //     position: fixed;
-    // }
 }
 
 /* Mobile */
