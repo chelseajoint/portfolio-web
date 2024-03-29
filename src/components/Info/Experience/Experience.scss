@@ -1,33 +1,59 @@
 @import '../../../styles/variables.scss';
 
 .experience {
-    margin-top: 4rem;
+    margin-top: -4rem;
+    padding-top: 8rem;
     z-index: 0;
 
+    &:hover {
+        .job-info:not(:hover) {
+            opacity: .5;
+        }
+    }
 
 .job-info {
-    display: flex;
-    margin-bottom: 2rem;
     text-decoration: none;
+    display: flex;
+    position: relative;
+    margin-bottom: 2rem;
     color: $blue;
+    z-index: 1;
 
-    padding: 1rem;
-    margin-left: -1.2rem;
-    margin-top: -1.2rem;
-    border: .2rem solid $black;
-    border-radius: 1rem;    
-    @include transition;
-    transition-property: border-color;
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 8rem;
+        z-index: -1;
+        opacity: 0;
+        @include transition;
+        transition-property: opacity;
+    }
+
+    &::before {
+        top: -4rem;
+        background: linear-gradient(0deg, $black 75%, rgba($black, 0) 100%);
+    }
+
+    &::after {
+        bottom: -4rem;
+        background: linear-gradient(180deg, $black 75%, rgba($black, 0) 100%);
+    }
 
     &:hover {
-        // border-color: $red;
+        opacity: 1;
+        z-index: 2;
+
+        &::before,
+        &::after {
+            opacity: 1;
+        }
 
         .company {
-            // color: $red;
-
             &::after {
                 transform: translateY(-.1rem) translateX(.1rem) rotate(180deg);
-                border-color: $red;
             }
         }
     }
@@ -43,7 +69,7 @@
             transform: translateY(20%) rotate(180deg);
             width: .6rem;
             height: .6rem;
-            margin-top: .1rem;
+            margin-top: -.1rem;
             margin-left: .1rem;
             border-left: .2rem solid $red;
             border-bottom: .2rem solid $red;
@@ -71,6 +97,7 @@
 
     .clients {
         margin-bottom: .5rem;
+        // @include baseFontStyle;
     }
 
     .skills {
@@ -78,7 +105,8 @@
         flex-wrap: wrap;
 
         h4{
-            color: $black;
+            @include baseFontStyle;
+            color: $blue;
             position: relative;
             border-radius: .5rem;
             padding: .1rem .5rem;
@@ -86,8 +114,9 @@
             margin-right: .25rem;
         
             &::before {
-                content: "";
+                content: '';
                 position: absolute;
+                opacity: .1;
                 top: 0;
                 left: 0;
                 width: 100%;
@@ -106,4 +135,3 @@
     }
 }
 }
-

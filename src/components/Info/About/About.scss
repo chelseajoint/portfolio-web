@@ -1,7 +1,8 @@
 @import '../../../styles/variables.scss';
 
 .about {
-    margin-top: 4rem;
+    margin-top: -4rem;
+    padding-top: 8rem;
 
     .accent {
         @include blackFontStyle;

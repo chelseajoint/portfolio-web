@@ -4,8 +4,7 @@ import './Experience.scss';
 
 const Experience = () => {
   const handleJobClick = (url) => {
-    window.open(url, '_blank'); // Открывает ссылку в новой вкладке
-    // Или можно использовать window.location.href = url; для перехода на новую страницу
+    window.open(url, '_blank');
   };
 
   return (
@@ -16,7 +15,7 @@ const Experience = () => {
           key={index}
           href={experience.link}
           onClick={(e) => {
-            e.preventDefault(); // Предотвращает стандартное поведение ссылки
+            e.preventDefault();
             handleJobClick(experience.link);
           }}
         >
@@ -31,7 +30,7 @@ const Experience = () => {
                 ))}
               </ul>
             </div>
-            {experience.clients && <h4 className='clients'>Clientes: {experience.clients.join(', ')}</h4>}
+            {experience.clients && <h4 className='clients'>Clientes: {experience.clients.join(', ')}...</h4>}
             <div className='skills'>
               {experience.skills.map((skill, idx) => (
                 <h4 key={idx}>{skill}</h4>
