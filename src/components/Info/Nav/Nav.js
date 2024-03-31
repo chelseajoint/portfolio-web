@@ -7,18 +7,20 @@ const Nav = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = document.querySelectorAll('section'); // Получаем все секции
+      const sections = document.querySelectorAll('section');
       let scrollPosition = window.scrollY;
 
       sections.forEach(section => {
-        const top = section.offsetTop - 100; // Регулируем точность
+        const top = section.offsetTop - 100;
         const bottom = top + section.offsetHeight;
-        
+
         if (scrollPosition >= top && scrollPosition < bottom) {
-          setActiveSection(section.id); // Устанавливаем активную секцию
+          setActiveSection(section.id);
         }
       });
     };
+
+    handleScroll();
 
     window.addEventListener('scroll', handleScroll);
 
@@ -33,7 +35,7 @@ const Nav = () => {
       <ul>
         <li><a href="#about" className={activeSection === 'about' ? 'active' : ''}>Quien soy</a></li>
         <li><a href="#experience" className={activeSection === 'experience' ? 'active' : ''}>Experiencia</a></li>
-        {/* <li><a href="#projects" className={activeSection === 'projects' ? 'active' : ''}>Proyectos</a></li> */}
+        <li><a href="#projects" className={activeSection === 'projects' ? 'active' : ''}>Proyectos</a></li>
       </ul>
     </nav>
   );

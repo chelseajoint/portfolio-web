@@ -5,6 +5,12 @@
     width: 100%;
     // margin-top: -4rem;
     z-index: 3;
+
+    &:hover .about,
+    &:hover .experience,
+    &:hover .projects {
+        opacity: 1;
+    }
     
     .shadow {
         width: 200%;
@@ -22,23 +28,24 @@
         padding: 0;
         cursor: pointer;
         margin-top: -4rem;
-        margin-left: -3%;
+        margin-left: -2rem;
 
-        a {
-                text-decoration: none;
-                color: $blue;
-            }
         li {
             font-size: $fontSize1-4;
-            width: 13rem;
+            width: 11rem;
             text-align: center;
-            // @include transition;
-            // transition-property: font-weight;
+            padding-right: 1.5rem;
+        }
 
-            &:hover,
-                &:active,
-                &.active {
-                @include blackFontStyle;
+        a {
+            text-decoration: none;
+            @include blackFontStyle;
+            color: $blue;
+            @include transition;
+            transition-property: color;
+
+            &:hover, &:active, &.active {
+            color: $red; 
             }
         }
     }

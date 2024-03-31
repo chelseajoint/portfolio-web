@@ -1,5 +1,7 @@
 import React from 'react';
-import experienceData from './experienceData.json';
+import experienceData from './resource/experienceData.json';
+import cv from './resource/MariiaKoikonova_CV_FrontEnd.pdf';
+
 import './Experience.scss';
 
 const Experience = () => {
@@ -7,10 +9,14 @@ const Experience = () => {
     window.open(url, '_blank');
   };
 
+  const handleDownloadCV = () => {
+    window.open(cv, '_blank');
+  };
+
   return (
     <section className='experience' id='experience'>
       {experienceData.map((experience, index) => (
-        <a
+        <button
           className='job-info'
           key={index}
           href={experience.link}
@@ -19,14 +25,14 @@ const Experience = () => {
             handleJobClick(experience.link);
           }}
         >
-          <div className='dates'>{experience.dates}</div>
-          <div className='info'>
+          <h4 className='dates'>{experience.dates}</h4>
+          <div className='info-position'>
             <h3 className='company'>{experience.company}</h3>
             <h4 className='position'>{experience.position}</h4>
             <div className='tasks'>
               <ul>
                 {experience.tasks.map((task, idx) => (
-                  <li key={idx}>{task}</li>
+                  <li key={idx}><h4>{task}</h4></li>
                 ))}
               </ul>
             </div>
@@ -37,8 +43,9 @@ const Experience = () => {
               ))}
             </div>
           </div>
-        </a>
+        </button>
       ))}
+      <button className='resume' onClick={handleDownloadCV}><h4>Ver CV completo</h4></button>
     </section>
   );
 };

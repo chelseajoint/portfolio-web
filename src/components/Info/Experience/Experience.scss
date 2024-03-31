@@ -2,136 +2,23 @@
 
 .experience {
     margin-top: -4rem;
-    padding-top: 8rem;
-    z-index: 0;
 
-    &:hover {
-        .job-info:not(:hover) {
-            opacity: .5;
-        }
-    }
-
-.job-info {
-    text-decoration: none;
-    display: flex;
-    position: relative;
-    margin-bottom: 2rem;
-    color: $blue;
-    z-index: 1;
-
-    &::before,
-    &::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 8rem;
-        z-index: -1;
-        opacity: 0;
-        @include transition;
-        transition-property: opacity;
-    }
-
-    &::before {
-        top: -4rem;
-        background: linear-gradient(0deg, $black 75%, rgba($black, 0) 100%);
-    }
-
-    &::after {
-        bottom: -4rem;
-        background: linear-gradient(180deg, $black 75%, rgba($black, 0) 100%);
-    }
-
-    &:hover {
-        opacity: 1;
-        z-index: 2;
-
-        &::before,
-        &::after {
-            opacity: 1;
-        }
-
-        .company {
-            &::after {
-                transform: translateY(-.1rem) translateX(.1rem) rotate(180deg);
-            }
-        }
-    }
-
-    .company {
-        @include transition;
-        transition-property: color;
-        color: $red;
-
-        &::after {
-            content: '';
-            position: absolute;
-            transform: translateY(20%) rotate(180deg);
-            width: .6rem;
-            height: .6rem;
-            margin-top: -.1rem;
-            margin-left: .1rem;
-            border-left: .2rem solid $red;
-            border-bottom: .2rem solid $red;
-            @include transition;
-            transition-property: border-color;
-            transition-property: transform;
-        }
-    }
-
-    .dates {
-        white-space: nowrap;
-    }
-
-    .info {
-        width: 100%;
-        margin-left: 2rem;
-        margin-top: -.3rem;
-    }
-
-    h3, h4 {
-        @include blackFontStyle;
-        color: $blue;
-        margin: 0;
-    }
-
-    .clients {
-        margin-bottom: .5rem;
-        // @include baseFontStyle;
-    }
-
-    .skills {
+    .job-info {
         display: flex;
-        flex-wrap: wrap;
-
-        h4{
-            @include baseFontStyle;
-            color: $blue;
-            position: relative;
-            border-radius: .5rem;
-            padding: .1rem .5rem;
-            margin-top: .25rem;
-            margin-right: .25rem;
-        
-            &::before {
-                content: '';
-                position: absolute;
-                opacity: .1;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: $blue;
-                border-radius: .5rem;
-                // filter: blur(.1rem);
-                z-index: -1;
-            }
+    
+        .dates {
+            white-space: nowrap;
+        }
+    
+        .info-position {
+            width: 100%;
+            margin-left: 2rem;
+            margin-top: -.3rem;
         }
     }
-
-    .tasks ul {
-        margin: 0;
-        padding: .5rem 1.5rem;
+    
+    .resume {
+        position: absolute;
+        margin-left: 10.8rem;
     }
-}
 }

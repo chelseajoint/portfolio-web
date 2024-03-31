@@ -4,6 +4,10 @@
     margin-top: -4rem;
     padding-top: 8rem;
 
+    h4 {
+        margin: 0;
+    }
+
     .accent {
         @include blackFontStyle;
     }
