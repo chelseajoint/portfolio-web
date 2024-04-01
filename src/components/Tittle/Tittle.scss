@@ -14,3 +14,20 @@
         white-space: nowrap;
     }
 }
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+    .br-none {
+        display: none;
+    }
+
+    .tittle {
+        width: 100%;
+        margin-left: -4rem;
+        text-align: center;
+
+        .h2 {
+            margin-top: 1rem;
+        }
+    }
+}

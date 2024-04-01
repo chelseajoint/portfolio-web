@@ -12,3 +12,9 @@
         @include blackFontStyle;
     }
 }
+
+@media only screen and (max-width: 767px) {
+    .about {
+        padding-top: 20rem;
+    }
+}
