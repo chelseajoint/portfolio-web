@@ -27,14 +27,22 @@ h4 {
 }
 
 /* Mobile */
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+    html {
+        font-size: 16px;
+    }
+}
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
+    html {
+        font-size: 12px;
+    }
+}
+/* Laptop */
+@media (min-width: 1024px) and (max-width: 1279px) {
     html {
         font-size: 14px;
     }
 }
-/* Laptop */
-@media (min-width: 1024px) and (max-width: 1279px) {}
 /* Desktop */
 @media (min-width: 1280px) {}
