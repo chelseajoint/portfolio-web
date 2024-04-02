@@ -6,7 +6,7 @@ const Tittle = () => {
     return (
         <section className='tittle'>
             <h1>Mariia <br className='br-none'/>Koikonova</h1>
-            <h2>Programadora Front-End <br className='br-none'/>y Diseñadora Grafica</h2>
+            <h2>Programadora Front-End <br/>y Diseñadora Grafica</h2>
         </section>
     );
 };
