@@ -58,6 +58,7 @@
                 @include transition;
                 transition-property: color;
                 font-size: $fontSize1;
+                padding: 0;
     
                 &:hover {
                     color: $red;
@@ -71,11 +72,5 @@
         position: relative;
         bottom: -1rem;
         margin-bottom: 1rem;
-
-        .contacts {
-            .button {
-                font-size: $fontSize1;
-            }
-        }
     }
 }
