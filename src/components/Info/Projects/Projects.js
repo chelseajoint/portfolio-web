@@ -14,6 +14,7 @@ const Projects = () => {
 
   return (
     <section className='projects' id='projects'>
+      <h3 className='title-projects'>Proyectos</h3>
       {projectsData.map((project, index) => (
         <button
           className='project-info'

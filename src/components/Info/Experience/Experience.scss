@@ -19,12 +19,27 @@
     
     .resume {
         position: absolute;
+        height: 1.4rem;
         margin-left: 10.8rem;
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 799px) {
     .experience {
-        margin-top: -10rem;
+        margin-top: 0;
+
+        .job-info {
+            display: block;
+
+            .info-position {
+                margin-left: 0;
+                margin-top: 0.1rem;
+            }
+        }
+
+        .resume {
+            margin-left: 0;
+            position: relative;
+        }
     }
 }

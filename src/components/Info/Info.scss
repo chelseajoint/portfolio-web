@@ -11,6 +11,10 @@
         }
     }
 
+    .title-about, .title-experience, .title-projects {
+        display: none;
+    }
+
     .experience, .projects {
         padding-top: 8rem;
         z-index: 0;
@@ -153,13 +157,49 @@
     
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 799px) {
     .info {
         width: 100%;
         margin: 0;
 
+        &:hover {
+            .about:not(:hover), .experience:not(:hover), .projects:not(:hover) {
+                opacity: 1;
+            }
+        }
+
         .experience, .projects {
-            padding-top: 20rem;
+            .job-info, .project-info {
+                &::before, &::after {
+                    background: none;
+                }
+            }
+        }
+
+        .title-about, .title-experience, .title-projects {
+            display: block;
+        }
+
+        .about, .experience, .projects {
+            padding-top: 5rem;
+
+            &:hover {
+                .resume, .view-all {
+                    h4 {
+                        opacity: 1;
+                    }
+                }
+        
+                .job-info:not(:hover), .project-info:not(:hover) {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .title-about, .title-experience, .title-projects {
+            @include blackFontStyle;
+            color: $blue;
+            text-transform: uppercase;
         }
         
     }

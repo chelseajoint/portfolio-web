@@ -1,14 +1,14 @@
 import React from 'react';
 
-import './Tittle.scss';
+import './Title.scss';
 
-const Tittle = () => {
+const Title = () => {
     return (
-        <section className='tittle'>
+        <section className='title'>
             <h1>Mariia <br className='br-none'/>Koikonova</h1>
             <h2>Programadora Front-End <br/>y Diseñadora Grafica</h2>
         </section>
     );
 };
 
-export default Tittle;
+export default Title;

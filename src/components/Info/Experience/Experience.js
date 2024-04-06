@@ -15,6 +15,7 @@ const Experience = () => {
 
   return (
     <section className='experience' id='experience'>
+      <h3 className='title-experience'>Experiencia</h3>
       {experienceData.map((experience, index) => (
         <button
           className='job-info'

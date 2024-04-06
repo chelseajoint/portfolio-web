@@ -1,5 +1,5 @@
 import React from 'react';
-import Tittle from './components/Tittle/Tittle';
+import Title from './components/Title/Title';
 import Info from './components/Info/Info';
 import Contact from './components/Contact/Contact';
 // import Background from './components/Background/Background';
@@ -11,7 +11,7 @@ function App() {
     <div className="app">
       {/* <Background /> */}
       <div className='content'>
-      <Tittle />
+      <Title />
       <Contact />
       <Info />
       </div>

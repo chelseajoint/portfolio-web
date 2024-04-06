@@ -53,13 +53,43 @@
             justify-content: center;
     
             button {
+                @include baseFontStyle;
                 color: $blue;
                 @include transition;
                 transition-property: color;
+                font-size: $fontSize1;
     
                 &:hover {
                     color: $red;
                 }
             }
         }
+}
+
+@media only screen and (max-width: 799px) {
+    .contact {
+        position: relative;
+        bottom: -1rem;
+        margin-bottom: 1rem;
+
+        // position: fixed;
+        // top: 2rem;
+        // right: 2rem;
+        // display: block;
+
+        .social {
+            button {
+                width: 2rem;
+                height: 2rem;
+                margin-right: .5rem;
+            }
+        }
+
+        .contacts {
+            .button {
+                padding: 0;
+                line-height: 1rem;
+            }
+        }
+    }
 }

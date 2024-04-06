@@ -1,6 +1,6 @@
 @import '../../styles/variables.scss';
 
-.tittle {
+.title {
     @include blackFontStyle;
     // padding-right: 4rem;
     position: fixed;
@@ -16,15 +16,18 @@
 }
 
 /* Mobile */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 799px) {
     .br-none {
         display: none;
     }
 
-    .tittle {
+    .title {
         width: 100%;
+        margin-top: -5rem;
         margin-left: -6rem;
-        text-align: center;
+        padding: 5rem 6rem 0 6rem;
+        box-sizing: border-box;
+        position: relative;
 
         .h2 {
             margin-top: 1rem;
