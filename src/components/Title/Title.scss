@@ -16,7 +16,7 @@
 }
 
 /* Mobile */
-@media only screen and (max-width: 799px) {
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
     .br-none {
         display: none;
     }

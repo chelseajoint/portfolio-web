@@ -26,8 +26,8 @@ h4 {
     padding: 4rem;
 }
 
-/* Mobile */
-@media only screen and (max-width: 799px) and (orientation: portrait) {
+/* Mobile - Tablet */
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
     html {
         font-size: 16px;
     }
@@ -36,17 +36,21 @@ h4 {
         padding: 5rem 6rem;
     }
 }
-/* Tablet */
-@media only screen and (min-width: 800px) and (max-width: 1023px) {
+/* Tablet - Laptop */
+@media only screen and (min-width: 1025px) and (max-width: 1279px) {
     html {
         font-size: 12px;
     }
 }
-/* Laptop */
-@media (min-width: 1024px) and (max-width: 1279px) {
+// /* Laptop */
+// @media (min-width: 1024px) and (max-width: 1279px) {
+//     html {
+//         font-size: 14px;
+//     }
+// }
+/* Desktop */
+@media (min-width: 1280px) {
     html {
         font-size: 14px;
     }
 }
-/* Desktop */
-@media (min-width: 1280px) {}
