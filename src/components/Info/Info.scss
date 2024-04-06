@@ -182,6 +182,12 @@
 
         .about, .experience, .projects {
             padding-top: 5rem;
+            
+            .job-info, .project-info {
+                .skills h4 {
+                    font-size: $fontSize1;
+                }
+            }
 
             &:hover {
                 .resume, .view-all {
@@ -201,12 +207,5 @@
             color: $blue;
             text-transform: uppercase;
         }
-
-        .job-info, .project-info {
-            .skills h4 {
-                font-size: $fontSize1;
-            }
-        }
-        
     }
 }
