@@ -144,7 +144,6 @@
                     background-color: $blue;
                     border-radius: .5rem;
                     z-index: 1;
-                    font-size: 1rem;
                 }
             }
         }
@@ -201,6 +200,12 @@
             @include blackFontStyle;
             color: $blue;
             text-transform: uppercase;
+        }
+
+        .job-info, .project-info {
+            .skills h4 {
+                font-size: $fontSize1;
+            }
         }
         
     }

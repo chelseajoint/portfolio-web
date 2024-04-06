@@ -72,19 +72,10 @@
         bottom: -1rem;
         margin-bottom: 1rem;
 
-        // .social {
-        //     button {
-        //         width: 2rem;
-        //         height: 2rem;
-        //         margin-right: .5rem;
-        //     }
-        // }
-
-        // .contacts {
-        //     .button {
-        //         padding: 0;
-        //         line-height: 1rem;
-        //     }
-        // }
+        .contacts {
+            .button {
+                font-size: $fontSize1;
+            }
+        }
     }
 }
