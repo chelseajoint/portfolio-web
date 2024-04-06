@@ -35,6 +35,14 @@ h4 {
     .content {
         padding: 5rem 6rem;
     }
+
+    h1 {
+        font-size: $fontSize6;
+    }
+
+    h2 {
+        font-size: $fontSize2;
+    }
 }
 /* Tablet - Laptop */
 @media only screen and (min-width: 1025px) and (max-width: 1279px) {

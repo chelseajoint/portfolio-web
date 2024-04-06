@@ -1,12 +1,12 @@
 @import '../../../styles/variables.scss';
 
 .about {
-    @include baseFontStyle;
     margin-top: -4rem;
     padding-top: 8rem;
 
     h4 {
         margin: 0;
+        @include baseFontStyle;
     }
 
     .accent {
