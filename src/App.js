@@ -12,8 +12,8 @@ function App() {
       {/* <Background /> */}
       <div className='content'>
       <Title />
-      <Contact />
       <Info />
+      <Contact />
       </div>
     </div>
   );

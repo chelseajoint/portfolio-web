@@ -34,6 +34,9 @@ h4 {
 
     .content {
         padding: 5rem 6rem;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
     }
 
     h1 {

@@ -30,6 +30,7 @@
 
         li {
             font-size: $fontSize1-4;
+            white-space: nowrap;
             &:last-child {
                 padding-right: 4rem;
               }
@@ -41,6 +42,7 @@
             color: $blue;
             @include transition;
             transition-property: color;
+            z-index: 3;
 
             &:hover, &:active, &.active {
             color: $red; 

@@ -2,10 +2,11 @@ import React from 'react';
 
 import './About.scss';
 
-const About = () => {
+const About = ({ isOpen, toggle }) => {
     return (
         <section className='about' id='about'>
-            <h3 className='title-about'>Quien soy</h3>
+            <h3 className='title-about' onClick={toggle}>Quien soy</h3>
+            <div className={`mobile-dropdown ${isOpen ? 'open' : ''}`}>
             <h4>
             ¡Hola!
             <br/><br/>
@@ -23,6 +24,7 @@ Si tienes alguna pregunta o simplemente quieres charlar, no dudes en ponerte en 
 <br/><br/>
 ¡Gracias por tu interés y espero tener la oportunidad de colaborar juntos!
             </h4>
+            </div>
         </section>
     )
 }

@@ -101,16 +101,12 @@
             }
         }
     
-        .company, .position, .clients, .name {
+        .company, .position, .name {
             @include blackFontStyle;
         }
 
-        .position, .clients {
+        .position {
             color: $blue;
-        }
-
-        .clients {
-            margin-bottom: .5rem;
         }
     
         .company, .name {
@@ -150,7 +146,7 @@
     
         .tasks ul {
             margin: 0;
-            padding: .5rem 1.5rem;
+            padding: .5rem 1.3rem;
         }
     }
     }
@@ -161,6 +157,12 @@
     .info {
         width: 100%;
         margin: 0;
+        // flex: 1;
+        overflow-y: auto;
+
+        display: flex;
+        flex-direction: column;
+        height: 100%;
 
         &:hover {
             .about:not(:hover), .experience:not(:hover), .projects:not(:hover) {
@@ -178,10 +180,31 @@
 
         .title-about, .title-experience, .title-projects {
             display: block;
+            @include blackFontStyle;
+            color: $blue;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin: 0;
+
+            &:active, &.active {
+                color: $red; 
+            }
+        }
+
+        .mobile-dropdown:not(.open){
+            display: none;
+        }
+
+        .mobile-dropdown.open {
+            overflow-y: auto;
+            display: block;
         }
 
         .about, .experience, .projects {
-            padding-top: 5rem;
+            padding-top: 0;
+            // overflow-y: auto;
+            // height: 2rem;
+            // flex: 1;
             
             .job-info, .project-info {
                 .skills h4 {
@@ -200,12 +223,6 @@
                     opacity: 1;
                 }
             }
-        }
-
-        .title-about, .title-experience, .title-projects {
-            @include blackFontStyle;
-            color: $blue;
-            text-transform: uppercase;
         }
     }
 }
