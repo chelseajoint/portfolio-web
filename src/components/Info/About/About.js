@@ -5,7 +5,7 @@ import './About.scss';
 const About = ({ isOpen, toggle }) => {
     return (
         <section className='about' id='about'>
-            <h3 className='title-about' onClick={toggle}>Quien soy</h3>
+            <h3 className={`title-about ${isOpen ? 'active' : ''}`} onClick={toggle}>Quien soy</h3>
             <div className={`mobile-dropdown ${isOpen ? 'open' : ''}`}>
             <h4>
             ¡Hola!

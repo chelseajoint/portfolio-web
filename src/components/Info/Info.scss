@@ -156,13 +156,16 @@
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
     .info {
         width: 100%;
+        height: 50vh;
+        display: block;
         margin: 0;
+        
         // flex: 1;
-        overflow-y: auto;
+        // overflow-y: auto;
 
-        display: flex;
-        flex-direction: column;
-        height: 100%;
+        // display: flex;
+        // flex-direction: column;
+        // height: 100%;
 
         &:hover {
             .about:not(:hover), .experience:not(:hover), .projects:not(:hover) {
@@ -185,6 +188,7 @@
             text-transform: uppercase;
             cursor: pointer;
             margin: 0;
+            z-index: 3;
 
             &:active, &.active {
                 color: $red; 
@@ -198,10 +202,40 @@
         .mobile-dropdown.open {
             overflow-y: auto;
             display: block;
+            padding: 2rem 0;
+            box-sizing: border-box;
+
+            // position: relative;
+            height: 35vh;
+
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                margin-left: -1rem; 
+                width: calc(100vw - 10rem);
+                height: 2rem;
+                z-index: 4;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &::before {
+                margin-top: -2rem;
+                background: linear-gradient(180deg, $black 0%, rgba($black, 0) 100%);
+            }
+
+            &::after {
+                background: linear-gradient(0deg, $black 0%, rgba($black, 0) 100%);
+            }
         }
 
         .about, .experience, .projects {
+            // height: 100%;
             padding-top: 0;
+            // display: flex;
+            // flex-direction: column;
             // overflow-y: auto;
             // height: 2rem;
             // flex: 1;
@@ -209,6 +243,12 @@
             .job-info, .project-info {
                 .skills h4 {
                     font-size: $fontSize1;
+                }
+            }
+
+            .resume, .view-all {
+                h4 {
+                    margin-bottom: 0;
                 }
             }
 

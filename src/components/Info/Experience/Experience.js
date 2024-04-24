@@ -15,7 +15,7 @@ const Experience = ({ isOpen, toggle }) => {
 
   return (
     <section className='experience' id='experience'>
-      <h3 className='title-experience' onClick={toggle}>Experiencia</h3>
+      <h3 className={`title-experience ${isOpen ? 'active' : ''}`} onClick={toggle}>Experiencia</h3>
       <div className={`mobile-dropdown ${isOpen ? 'open' : ''}`}>
       {experienceData.map((experience, index) => (
         <button

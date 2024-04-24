@@ -16,8 +16,14 @@
 }
 
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
-    .about {
-        margin-top: 0;
-        padding-top: 0;
+    .info {
+        .about {
+            margin-top: 0;
+            padding-top: 0;
+    
+            .mobile-dropdown.open::after {
+                bottom: 3.6rem;
+            }
+        }
     }
 }

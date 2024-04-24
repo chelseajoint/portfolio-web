@@ -16,3 +16,13 @@
         margin-left: .2rem;
     }
 }
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+    .info {
+        .projects {
+            .mobile-dropdown.open::after {
+                bottom: 0;
+            }
+        }
+    }
+}

@@ -29,29 +29,35 @@
 }
 
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
-    .experience {
-        margin-top: 0;
-
-        .job-info {
-            display: block;
-
-            .dates {
-                display: none;
+    .info {
+        .experience {
+            margin-top: 0;
+    
+            .mobile-dropdown.open::after {
+                bottom: 2rem;
             }
-
-            .info-position {
-                margin-left: 0;
-                margin-top: 0.1rem;
-
-                .position-dates {
-                    display: block;
+    
+            .job-info {
+                display: block;
+    
+                .dates {
+                    display: none;
+                }
+    
+                .info-position {
+                    margin-left: 0;
+                    margin-top: 0.1rem;
+    
+                    .position-dates {
+                        display: block;
+                    }
                 }
             }
-        }
-
-        .resume {
-            margin-left: 0;
-            position: relative;
+    
+            .resume {
+                margin-left: 0;
+                position: relative;
+            }
         }
     }
 }

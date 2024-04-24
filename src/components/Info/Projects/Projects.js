@@ -14,7 +14,7 @@ const Projects = ({ isOpen, toggle }) => {
 
   return (
     <section className='projects' id='projects'>
-      <h3 className='title-projects' onClick={toggle}>Proyectos</h3>
+      <h3 className={`title-projects ${isOpen ? 'active' : ''}`} onClick={toggle}>Proyectos</h3>
       <div className={`mobile-dropdown ${isOpen ? 'open' : ''}`}>
       {projectsData.map((project, index) => (
         <button

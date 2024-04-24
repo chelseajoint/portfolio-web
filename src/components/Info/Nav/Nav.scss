@@ -42,7 +42,6 @@
             color: $blue;
             @include transition;
             transition-property: color;
-            z-index: 3;
 
             &:hover, &:active, &.active {
             color: $red; 
