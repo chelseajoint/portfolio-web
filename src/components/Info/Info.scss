@@ -154,7 +154,7 @@
     
 }
 
-@media only screen and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (max-width: 1024px) {
     .info {
         width: 100%;
         height: 50vh;
@@ -183,6 +183,7 @@
         }
 
         .title-about, .title-experience, .title-projects {
+            // font-size: $fontSize2;
             display: block;
             @include blackFontStyle;
             color: $blue;
@@ -253,6 +254,38 @@
                 }
             }
 
+            &:hover {
+                .resume, .view-all {
+                    h4 {
+                        opacity: 1;
+                    }
+                }
+        
+                .job-info:not(:hover), .project-info:not(:hover) {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1279px) {
+    .info {
+        &:hover {
+            .about:not(:hover), .experience:not(:hover), .projects:not(:hover) {
+                opacity: 1;
+            }
+        }
+
+        .experience, .projects {
+            .job-info, .project-info {
+                &::before, &::after {
+                    background: none;
+                }
+            }
+        }
+
+        .about, .experience, .projects {
             &:hover {
                 .resume, .view-all {
                     h4 {

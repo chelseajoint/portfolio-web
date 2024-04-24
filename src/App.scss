@@ -27,9 +27,9 @@ h4 {
 }
 
 /* Mobile - Tablet */
-@media only screen and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (max-width: 1024px) {
     html {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .content {
@@ -51,7 +51,7 @@ h4 {
 /* Tablet - Laptop */
 @media only screen and (min-width: 1025px) and (max-width: 1279px) {
     html {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 // /* Laptop */
@@ -63,6 +63,6 @@ h4 {
 /* Desktop */
 @media (min-width: 1280px) {
     html {
-        font-size: 16px;
+        font-size: 21px;
     }
 }
