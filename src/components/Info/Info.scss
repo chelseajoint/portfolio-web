@@ -157,7 +157,7 @@
 @media only screen and (max-width: 1024px) {
     .info {
         width: 100%;
-        height: calc(100vh - 10vh - 3rem - 8rem);
+        height: calc(77vh - 11rem);
         display: block;
         margin: 0;
         
@@ -210,7 +210,7 @@
             overflow-y: auto;
             display: block;
             padding: 2rem 0;
-            height: calc(100vh - 10vh - 3rem - 8rem - 6.5rem);
+            height: calc(77vh - 11rem - 6.5rem);
             box-sizing: border-box;
 
             scrollbar-width: none;
