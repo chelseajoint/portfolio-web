@@ -157,7 +157,7 @@
 @media only screen and (max-width: 1024px) {
     .info {
         width: 100%;
-        height: 50vh;
+        height: calc(100vh - 10vh - 3rem - 8rem);
         display: block;
         margin: 0;
         
@@ -179,6 +179,11 @@
                 &::before, &::after {
                     background: none;
                 }
+
+                .name::after {
+                    margin-top: -0.4rem;
+                    margin-left: 0;
+                }
             }
         }
 
@@ -190,7 +195,7 @@
             text-transform: uppercase;
             cursor: pointer;
             margin: 0;
-            z-index: 3;
+            // z-index: 3;
 
             &:active, &.active {
                 color: $red; 
@@ -205,18 +210,22 @@
             overflow-y: auto;
             display: block;
             padding: 2rem 0;
+            height: calc(100vh - 10vh - 3rem - 8rem - 6.5rem);
             box-sizing: border-box;
 
-            // position: relative;
-            height: 35vh;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
 
             &::before, &::after {
                 content: '';
                 position: absolute;
                 margin-left: -1rem; 
-                width: calc(100vw - 10rem);
+                width: calc(100vw - 6rem);
                 height: 2rem;
-                z-index: 4;
+                z-index: 3;
 
                 display: flex;
                 flex-direction: column;
@@ -224,7 +233,7 @@
             }
 
             &::before {
-                margin-top: -2rem;
+                margin-top: -2.2rem;
                 background: linear-gradient(180deg, $black 0%, rgba($black, 0) 100%);
             }
 
