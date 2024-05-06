@@ -1,3 +1,4 @@
+//components/Info/Nav/Nav.js
 import React, { useState, useEffect } from 'react';
 
 import './Nav.scss';
@@ -22,10 +23,14 @@ const Nav = () => {
 
     handleScroll();
 
-    window.addEventListener('scroll', handleScroll);
+    const scrollListener = () => {
+      handleScroll();
+    };
+
+    document.addEventListener('scroll', scrollListener);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('scroll', scrollListener);
     };
   }, []);
 
@@ -33,9 +38,9 @@ const Nav = () => {
     <nav className='nav'>
       <div className='shadow'></div>
       <ul>
-        <li><a href="#about" className={activeSection === 'about' ? 'active' : ''}>Quien soy</a></li>
-        <li><a href="#experience" className={activeSection === 'experience' ? 'active' : ''}>Experiencia</a></li>
-        <li><a href="#projects" className={activeSection === 'projects' ? 'active' : ''}>Proyectos</a></li>
+        <li><a href="#about" onClick={() => setActiveSection('about')} className={activeSection === 'about' ? 'active' : ''}>Quien soy</a></li>
+        <li><a href="#experience" onClick={() => setActiveSection('experience')} className={activeSection === 'experience' ? 'active' : ''}>Experiencia</a></li>
+        <li><a href="#projects" onClick={() => setActiveSection('projects')} className={activeSection === 'projects' ? 'active' : ''}>Proyectos</a></li>
       </ul>
     </nav>
   );

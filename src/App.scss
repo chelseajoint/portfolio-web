@@ -1,3 +1,4 @@
+//App.scss
 @import './styles/variables.scss';
 
 html {
@@ -24,7 +25,14 @@ h4 {
 
 .content {
     padding: 4rem;
+    opacity: 0;
+    @include transition;
+    transition-property: opacity;
 }
+
+.content .visible {
+    opacity: 1;
+  }
 
 /* Mobile - Tablet */
 @media only screen and (max-width: 1024px) {
