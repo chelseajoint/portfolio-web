@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+
+.rotate-device {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape){
+    .rotate-device {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .spin-logo {
+            background-image: url('./resources/spin.svg');
+            width: 4rem;
+            height: 4rem;
+            background-size: inherit;
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            @include blackFontStyle;
+            color: $blue;
+            margin: 0;
+        }
+    }
+}

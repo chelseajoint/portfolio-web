@@ -44,6 +44,35 @@ h4 {
         font-size: $fontSize3-5;
     }
 }
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+    .app {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (aspect-ratio: 1/2) {
+    .app {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content {
+        display: none;
+    }
+}
+
 /* Tablet - Laptop */
 @media only screen and (min-width: 1025px) and (max-width: 1279px) {
     html {

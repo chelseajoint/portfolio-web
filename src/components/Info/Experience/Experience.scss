@@ -33,9 +33,9 @@
         .experience {
             margin-top: 0;
     
-            .mobile-dropdown.open::after {
-                bottom: 10rem;
-            }
+            // .mobile-dropdown.open::after {
+            //     bottom: calc(77vh - 11rem - 33vh);
+            // }
     
             .job-info {
                 display: block;
