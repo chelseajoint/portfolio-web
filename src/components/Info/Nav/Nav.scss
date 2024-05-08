@@ -40,8 +40,6 @@
             text-decoration: none;
             @include blackFontStyle;
             color: $blue;
-            @include transition;
-            transition-property: color;
 
             &:hover, &:active, &.active {
             color: $red; 
