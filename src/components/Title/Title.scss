@@ -1,6 +1,9 @@
 @import '../../styles/variables.scss';
 
 .title {
+    opacity: 0;
+    @include animation;
+
     @include blackFontStyle;
     position: fixed;
     z-index: 99;

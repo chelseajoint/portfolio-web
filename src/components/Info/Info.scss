@@ -6,6 +6,10 @@
     width: 50%;
     margin-left: 50%;
 
+    opacity: 0;
+    @include animation;
+    animation-delay: 0.3s;
+
     &:hover {
         .about:not(:hover), .experience:not(:hover), .projects:not(:hover) {
             opacity: .5;
