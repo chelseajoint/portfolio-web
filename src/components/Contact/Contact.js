@@ -19,7 +19,7 @@ const Contact = () => {
         <section className='contact'>
             <div className='social'>
                 <button
-                    onClick={() => handleButtonClick("https://github.com/chelseajoint")}
+                    onClick={() => handleButtonClick("https://github.com/koikonova")}
                     onMouseEnter={() => setGithubHover(true)}
                     onMouseLeave={() => setGithubHover(false)}
                 >
@@ -30,7 +30,7 @@ const Contact = () => {
                     />
                 </button>
                 <button
-                    onClick={() => handleButtonClick("https://www.linkedin.com/in/chelseajoint/")}
+                    onClick={() => handleButtonClick("https://www.linkedin.com/in/koikonova")}
                     onMouseEnter={() => setLinkedinHover(true)}
                     onMouseLeave={() => setLinkedinHover(false)}
                 >
@@ -42,7 +42,7 @@ const Contact = () => {
                 </button>
             </div>
             <div className='contacts'>
-                <a href="mailto:mariia.koikonova@gmail.com">mariia.koikonova@gmail.com</a>
+                <a href="mailto:mariiakoikonova@gmail.com">mariiakoikonova@gmail.com</a>
                 <a href="tel:+34658971100">+34 658 97 11 00</a>
             </div>
         </section>

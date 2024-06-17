@@ -1,13 +1,13 @@
 [
     {
       "name": "Portfolio Web",
-      "link": "https://github.com/chelseajoint/portfolio-web",
+      "link": "https://github.com/koikonova/portfolio-web",
       "about": "Diseño y desarrollo de un portfolio web personal para mostrar mis proyectos y habilidades.",
       "skills": ["JavaScript", "React", "SCSS", "Netlify"]
     },
     {
       "name": "Messenger para Yandex.Practicum",
-      "link": "https://github.com/chelseajoint/middle.messenger.praktikum.yandex",
+      "link": "https://github.com/koikonova/middle.messenger.praktikum.yandex",
       "about": "Desarrollo de un completo SPA: web messenger utilizando sólo JavaScript y Typescript. <br>La idea de esta aplicación estaba en la ausencia de frameworks y librerías en el lado del cliente para entender el funccionamiento de los mismos. <br>En el trabajo sobre el proyecto se implementaron parte de las funciones de tales bibliotecas como React y React Router. <br>El proyecto incluye funciones estándar de chat: registro, autorización, lista de chat, mensajería.",
       "skills": ["TypeScript", "SCSS", "Netlify", "Heroku", "NodeJS", "Webpack", "Docker", "ESlint", "Mocha"]
     },
@@ -19,25 +19,25 @@
     },
     {
       "name": "Octo Website",
-      "link": "https://github.com/chelseajoint/octo-website",
+      "link": "https://github.com/koikonova/octo-website",
       "about": "Desarrollo de una página web responsive como prueba.",
       "skills": ["JavaScript", "SCSS", "React"]
     },
     {
       "name": "Tic-tac-toe",
-      "link": "https://github.com/chelseajoint/tic-tac-toe",
+      "link": "https://github.com/koikonova/tic-tac-toe",
       "about": "Implementación de una versión modificada del popular juego de tres en raya.",
       "skills": ["JavaScript"]
     },
     {
       "name": "WordSearch",
-      "link": "https://github.com/chelseajoint/WordSearche",
+      "link": "https://github.com/koikonova/WordSearch",
       "about": "Desarrollo de un programa que resuelve sopas de letras para cualquier cuadrícula de letras y lista de palabras dadas.",
       "skills": ["JavaScript"]
     },
     {
       "name": "Solicitud de prestamo",
-      "link": "https://github.com/chelseajoint/solicitud-prestamo-app",
+      "link": "https://github.com/koikonova/solicitud-prestamo-app",
       "about": "Desarrollo de una pequeña web app responsive que permite a los usuarios solicitar un préstamo desde desktop y móvil, con capacidad para registrar los datos del usuario.",
       "skills": ["JavaScript", "SCSS", "React"]
     }
