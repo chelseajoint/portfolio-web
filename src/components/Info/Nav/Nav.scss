@@ -3,8 +3,13 @@
 .nav {
     position: fixed;
     width: 100%;
-    margin-top: -8rem;
     z-index: 3;
+
+    &:hover .about,
+    &:hover .experience,
+    &:hover .projects {
+        opacity: 1;
+    }
     
     .shadow {
         width: 200%;
@@ -22,17 +27,29 @@
         padding: 0;
         cursor: pointer;
         margin-top: -4rem;
-        margin-left: -3%;
 
         li {
             font-size: $fontSize1-4;
-            width: 13rem;
-            text-align: center;
+            white-space: nowrap;
+            &:last-child {
+                padding-right: 4rem;
+              }
+        }
 
-            &:hover {
-                @include blackFontStyle;
-                color: $blue;
+        a {
+            text-decoration: none;
+            @include blackFontStyle;
+            color: $blue;
+
+            &:hover, &:active, &.active {
+            color: $red; 
             }
         }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .nav {
+        display: none;
     }
 }

@@ -1,9 +1,25 @@
 @import '../../../styles/variables.scss';
 
 .about {
-    margin-top: 4rem;
+    margin-top: -4rem;
+    padding-top: 8rem;
+
+    h4 {
+        margin: 0;
+        @include baseFontStyle;
+        text-align: justify;
+    }
 
     .accent {
         @include blackFontStyle;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .info {
+        .about {
+            margin-top: 0;
+            padding-top: 0;
+        }
     }
 }

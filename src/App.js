@@ -1,20 +1,37 @@
-import React from 'react';
-import Tittle from './components/Tittle/Tittle';
-import Info from './components/Info/Info';
-import Contact from './components/Contact/Contact';
-// import Background from './components/Background/Background';
+import React, { useState, useEffect } from 'react';
+import Title from "./components/Title/Title";
+import Info from "./components/Info/Info";
+import Contact from "./components/Contact/Contact";
+import RotateDevice from "./components/RotateDevice/RotateDevice";
+import LoaderScreen from "./components/LoaderScreen/LoaderScreen";
 
-import './App.scss';
+import "./App.scss";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <div className="app">
-      {/* <Background /> */}
-      <div className='content'>
-      <Tittle />
-      <Contact />
-      <Info />
-      </div>
+      {isLoading ? (
+        <LoaderScreen />
+      ) : (
+        <>
+          <RotateDevice />
+          <div className="content">
+            <Title />
+            <Info />
+            <Contact />
+          </div>
+        </>
+      )}
     </div>
   );
 }

@@ -1,18 +1,58 @@
-@mixin fontStyle {
-    font-size: $baseFontStyle;
-    font-optical-sizing: $baseFontOpticalSizing;
-}
-
 @mixin baseFontStyle {
     font-family: $bodyFontFamily;
     font-weight: $baseFontWeight;
-    @include fontStyle;
+    font-optical-sizing: $baseFontOpticalSizing;
     color: $blue;
 }
 
 @mixin blackFontStyle {
     font-family: $blackFontFamily;
     font-weight: $blackFontWheight;
-    @include fontStyle;
+    font-optical-sizing: $baseFontOpticalSizing;
     color: $red;
 }
+
+@mixin transition {
+    transition-behavior: normal;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+@mixin arrow {
+    &::after {
+        content: '';
+        position: absolute;
+        transform: translateY(20%) rotate(180deg);
+        width: .6rem;
+        height: .6rem;
+        margin-top: -.1rem;
+        margin-left: .1rem;
+        border-left: .2rem solid $red;
+        border-bottom: .2rem solid $red;
+        @include transition;
+        transition-property: transform;
+    }
+}
+
+@mixin arrowHover {
+    &::after {
+        transform: translateY(-.1rem) translateX(.1rem) rotate(180deg);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @mixin animation {
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }

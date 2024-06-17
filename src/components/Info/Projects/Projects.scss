@@ -1,0 +1,17 @@
+@import '../../../styles/variables.scss';
+
+.projects {
+    position: relative;
+
+    .about-project {
+        h4 {
+            padding: .5rem 0;
+            text-align: justify;
+        }
+    }
+
+ .view-all {
+        position: relative;
+        margin-left: .2rem;
+    }
+}

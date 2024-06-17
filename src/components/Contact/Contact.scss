@@ -1,6 +1,57 @@
 @import '../../styles/variables.scss';
 
+.contact,
+.social,
+.contacts {
+    display: flex;
+}
+
 .contact {
     position: fixed;
     bottom: 4rem;
+
+    opacity: 0;
+    @include animation;
+    animation-delay: 0.6s;
+
+    button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .social {
+        button {
+            width: 3rem;
+            height: 3rem;
+            padding: 0;
+            margin-right: 1rem;
+        }
+    }
+
+    .contacts {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+
+        a {
+            @include baseFontStyle;
+            color: $blue;
+            font-size: $fontSize1;
+            padding: 0;
+            text-decoration: none;
+
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .contact {
+        position: relative;
+        bottom: 0;
+        margin-top: 1.5rem;
+    }
 }
