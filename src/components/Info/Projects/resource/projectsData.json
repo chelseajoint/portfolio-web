@@ -8,7 +8,7 @@
     {
       "name": "Messenger para Yandex.Practicum",
       "link": "https://github.com/koikonova/middle.messenger.praktikum.yandex",
-      "about": "Desarrollo de un completo SPA: web messenger utilizando sólo JavaScript y Typescript. <br>La idea de esta aplicación estaba en la ausencia de frameworks y librerías en el lado del cliente para entender el funccionamiento de los mismos. <br>En el trabajo sobre el proyecto se implementaron parte de las funciones de tales bibliotecas como React y React Router. <br>El proyecto incluye funciones estándar de chat: registro, autorización, lista de chat, mensajería.",
+      "about": "Desarrollo de un completo SPA: web messenger utilizando sólo JavaScript y Typescript.",
       "skills": ["TypeScript", "SCSS", "Netlify", "Heroku", "NodeJS", "Webpack", "Docker", "ESlint", "Mocha"]
     },
     {

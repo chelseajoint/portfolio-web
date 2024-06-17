@@ -37,7 +37,7 @@ const Projects = ({ isOpen, toggle }) => {
             </div>
           </button>
         ))}
-        <button className='view-all' onClick={handleViewAll}><h4>Ver github</h4></button>
+        <button className='view-all' onClick={() => handleViewAll('https://github.com/koikonova')}><h4>Ver github</h4></button>
       </div>
     </section>
   );

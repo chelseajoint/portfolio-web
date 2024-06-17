@@ -12,12 +12,12 @@
         margin: 0;
     }
 
-    h2 {
+    h3 {
         white-space: nowrap;
-        .additional {
-            @include baseFontStyle;
-            font-size: $fontSize1;
-        }
+    }
+
+    h4 {
+        color: $blue;
     }
 }
 
