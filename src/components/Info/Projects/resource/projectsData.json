@@ -3,7 +3,7 @@
       "name": "Portfolio Web",
       "link": "https://github.com/chelseajoint/portfolio-web",
       "about": "Diseño y desarrollo de un portfolio web personal para mostrar mis proyectos y habilidades.",
-      "skills": ["JavaScript", "React", "SCSS", "Netlify", "Webpack"]
+      "skills": ["JavaScript", "React", "SCSS", "Netlify"]
     },
     {
       "name": "Messenger para Yandex.Practicum",
@@ -21,7 +21,7 @@
       "name": "Octo Website",
       "link": "https://github.com/chelseajoint/octo-website",
       "about": "Desarrollo de una página web responsive como prueba.",
-      "skills": ["JavaScript", "SCSS"]
+      "skills": ["JavaScript", "SCSS", "React"]
     },
     {
       "name": "Tic-tac-toe",
@@ -39,6 +39,6 @@
       "name": "Solicitud de prestamo",
       "link": "https://github.com/chelseajoint/solicitud-prestamo-app",
       "about": "Desarrollo de una pequeña web app responsive que permite a los usuarios solicitar un préstamo desde desktop y móvil, con capacidad para registrar los datos del usuario.",
-      "skills": ["JavaScript", "SCSS"]
+      "skills": ["JavaScript", "SCSS", "React"]
     }
   ]
