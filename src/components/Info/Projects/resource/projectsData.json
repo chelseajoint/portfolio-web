@@ -3,7 +3,7 @@
       "name": "Portfolio Web",
       "link": "https://github.com/chelseajoint/portfolio-web",
       "about": "Diseño y desarrollo de un portfolio web personal para mostrar mis proyectos y habilidades.",
-      "skills": ["JavaScript", "SCSS", "Netlify", "NodeJS", "Webpack"]
+      "skills": ["JavaScript", "React", "SCSS", "Netlify", "Webpack"]
     },
     {
       "name": "Messenger para Yandex.Practicum",
