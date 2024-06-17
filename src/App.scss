@@ -1,89 +1,90 @@
 //App.scss
-@import './styles/variables.scss';
+@import "./styles/variables.scss";
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 body {
-    margin: 0;
-    background: $black;
-    @include baseFontStyle;
-    font-size: $fontSize1;
+  margin: 0;
+  background: $black;
+  @include baseFontStyle;
+  font-size: $fontSize1;
 }
 
 h1 {
-    font-size: $fontSize4;
+  font-size: $fontSize4;
 }
 
-h2, h3 {
-    font-size: $fontSize1-4;
+h2,
+h3 {
+  font-size: $fontSize1-4;
 }
 
 h4 {
-    font-size: $fontSize1;
+  font-size: $fontSize1;
 }
 
 .content {
-    padding: 4rem;
+  padding: 4rem;
 }
 
 /* Mobile - Tablet */
 @media only screen and (max-width: 1024px) {
-    html {
-        font-size: 3.5vw;
-    }
+  html {
+    font-size: 3.5vw;
+  }
 
-    .content {
-        height: 100vh;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+  .content {
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-    h1 {
-        font-size: $fontSize3-5;
-    }
+  h1 {
+    font-size: $fontSize3-5;
+  }
 }
 
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
-    .app {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+  .app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .content {
-        display: none;
-    }
+  .content {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1024px) and (aspect-ratio: 1/2) {
-    .app {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+  .app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .content {
-        display: none;
-    }
+  .content {
+    display: none;
+  }
 }
 
 /* Tablet - Laptop */
 @media only screen and (min-width: 1025px) and (max-width: 1279px) {
-    html {
-        font-size: 16px;
-    }
+  html {
+    font-size: 16px;
+  }
 }
 
 /* Desktop */
 @media (min-width: 1280px) {
-    html {
-        font-size: 21px;
-    }
+  html {
+    font-size: 26px;
+  }
 }

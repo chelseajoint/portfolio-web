@@ -1,49 +1,44 @@
 [
     {
-      "name": "Portfolio web",
+      "name": "Portfolio Web",
       "link": "https://github.com/chelseajoint/portfolio-web",
-      "about": "Diseño y desarrollo de un portfolio web.",
+      "about": "Diseño y desarrollo de un portfolio web personal para mostrar mis proyectos y habilidades.",
       "skills": ["JavaScript", "SCSS", "Netlify", "NodeJS", "Webpack"]
     },
     {
-      "name": "Messenger for Yandex.Practicum",
+      "name": "Messenger para Yandex.Practicum",
       "link": "https://github.com/chelseajoint/middle.messenger.praktikum.yandex",
-      "about": "Desarrollo de un completo SPA: web messenger utilizando sólo JavaScript y Typescript. La idea de esta aplicación estaba en la ausencia de frameworks y librerías en el lado del cliente para entender el funccionamiento de los mismos. En el trabajo sobre el proyecto se implementaron parte de las funciones de tales bibliotecas como React y React Router. El proyecto incluye funciones estándar de chat: registro, autorización, lista de chat, mensajería.",
+      "about": "Desarrollo de un completo SPA: web messenger utilizando sólo JavaScript y Typescript. <br>La idea de esta aplicación estaba en la ausencia de frameworks y librerías en el lado del cliente para entender el funccionamiento de los mismos. <br>En el trabajo sobre el proyecto se implementaron parte de las funciones de tales bibliotecas como React y React Router. <br>El proyecto incluye funciones estándar de chat: registro, autorización, lista de chat, mensajería.",
       "skills": ["TypeScript", "SCSS", "Netlify", "Heroku", "NodeJS", "Webpack", "Docker", "ESlint", "Mocha"]
     },
     {
-      "name": "Un proyecto de juego en equipo como parte del curso Middle Frontend Developer",
+      "name": "Un proyecto de Juego en Equipo",
       "link": "https://github.com/eldarknz/team.project.praktikum.yandex",
-      "about": ["La lógica del juego: jugar de austronauta cuyo objetivo es recoger joyas raras en diferentes rincones de la galaxia. Las tareas realizadas por mi:",
-      "El diseño de la página principal: un mini landing con la presentación del juego y las páginas de error 400, 500.",
-      "Ejecución de los test para el motor del juego y atorización.",
-      "Implementación de la puntuación de los jugadores: cuanto menor sea el tiempo para completar el juego, más puntos.",
-      "Conexión de la API del leaderboard, el récord del usuario se registra al final del juego, también el usuario puede ver la página del leaderboard.",
-      "Realizacion de infraestructura de servidor para emoji. Desarrollo de la especificación API para añadir y recibir reacciones emoji a un topic. Desarrollo de una migración de base de datos para aplicar los cambios del modelo. Desarrollo de API y controladores para añadir y recibir la informacion sobre reacciones emoji a un topic."],
+      "about": "Desarrollo de la lógica y funcionalidades de un juego donde el jugador es un astronauta que recoge joyas en la galaxia. <br>Las tareas realizadas por mi: Diseño de la página principal (mini landing), páginas de error 400 y 500, pruebas del motor del juego y autorización, sistema de puntuación basado en el tiempo, integración de la API del leaderboard, infraestructura del servidor para emojis, especificación y desarrollo de API para reacciones emoji.",
       "skills": ["TypeScript", "SCSS", "Webpack", "Web API", "React", "Redux", "React-Router", "NodeJS", "Docker", "ESlint", "Jest", "Web Workers", "Canvas API", "OAuth", "Nginx", "CI/CD", "SSL", "Proxy", "PostgreSQL", "MongoDB"]
     },
     {
-      "name": "Octo website",
+      "name": "Octo Website",
       "link": "https://github.com/chelseajoint/octo-website",
-      "about": "Este pequeño proyecto es una prueba donde el objetivo era el desarrollo de una pagina web responsive.",
+      "about": "Desarrollo de una página web responsive como prueba.",
       "skills": ["JavaScript", "SCSS"]
     },
     {
       "name": "Tic-tac-toe",
       "link": "https://github.com/chelseajoint/tic-tac-toe",
-      "about": "Una prueba la tarea de cual es terminar la versión modificada de un popular juego de tres en raya",
+      "about": "Implementación de una versión modificada del popular juego de tres en raya.",
       "skills": ["JavaScript"]
     },
     {
       "name": "WordSearch",
       "link": "https://github.com/chelseajoint/WordSearche",
-      "about": "Una prueba el objetivo de cual es hacer un programa que resuelva la sopa de letras para cualquier cuadrícula de letras y lista de palabras dadas.",
+      "about": "Desarrollo de un programa que resuelve sopas de letras para cualquier cuadrícula de letras y lista de palabras dadas.",
       "skills": ["JavaScript"]
     },
     {
       "name": "Solicitud de prestamo",
       "link": "https://github.com/chelseajoint/solicitud-prestamo-app",
-      "about": "Desarrollo de una pequeña WEBAPP que pueda ser integrada en una página web y accesible desde desktop y móvil, para la solicitud de un préstamo. En concreto es una pequeña webapp, responsive, para poder registrar los datos del usuario.",
+      "about": "Desarrollo de una pequeña web app responsive que permite a los usuarios solicitar un préstamo desde desktop y móvil, con capacidad para registrar los datos del usuario.",
       "skills": ["JavaScript", "SCSS"]
     }
   ]
